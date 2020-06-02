@@ -1,0 +1,50 @@
+{
+    "name": "pandora-crypto-browserify",
+    "version": "1.0.0",
+    "description": "Javascript Crypto Library for AES and sha256 for browser",
+    "keywords": [
+        "aes",
+        "browser",
+        "client",
+        "crypto",
+        "decrypt",
+        "encrypt",
+        "javascript",
+        "js",
+        "sha256",
+        "web"
+    ],
+    "homepage": "https://github.com/kingller/pandora-crypto-browserify",
+    "bugs": {
+        "url": "https://github.com/kingller/pandora-crypto-browserify/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kingller/pandora-crypto-browserify.git"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Kingller Tang",
+        "url": "https://github.com/kingller"
+    },
+    "files": [
+        "dist/*",
+        "package.json",
+        "README.md"
+    ],
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "build": "npm run clean && tsc --build tsconfig.json",
+        "clean": "rimraf ./dist",
+        "prepublishOnly": "npm run build"
+    },
+    "dependencies": {
+        "browserify-sjcl": "1.0.8",
+        "pandora-aes-browserify": "1.0.0"
+    },
+    "devDependencies": {
+        "rimraf": "^3.0.2",
+        "typescript": "^3.9.3"
+    }
+}
