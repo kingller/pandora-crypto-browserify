@@ -1,6 +1,6 @@
 {
     "name": "pandora-crypto-browserify",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Javascript Crypto Library for AES and sha256 for browser",
     "keywords": [
         "aes",
@@ -40,8 +40,8 @@
         "prepublishOnly": "npm run build"
     },
     "dependencies": {
-        "browserify-sjcl": "1.0.8",
-        "pandora-aes-browserify": "1.0.0"
+        "browserify-sjcl": "1.0.9",
+        "pandora-aes-browserify": "1.0.1"
     },
     "devDependencies": {
         "rimraf": "^3.0.2",
